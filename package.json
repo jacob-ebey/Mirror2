@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "mirror2",
+  "version": "0.0.1",
+  "description": "A MagicMirror alternative.",
+  "author": "Jacob Ebey <jacob.ebey@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "lerna run build",
+    "dev": "lerna run --parallel dev",
+    "bootstrap": "lerna bootstrap",
+    "postinstall": "npm run bootstrap"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "lerna": "^3.11.0"
+  }
+}

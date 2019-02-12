@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "name": "empty",
+  "version": "0.0.1",
+  "description": "A empty module used as a filler for positioning.",
+  "author": "Jacob Ebey <jacob.ebey@live.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "source": "src/index.js",
+  "scripts": {
+    "build": "microbundle build --jsx React.createElement --compress false --sourcemap false",
+    "dev": "microbundle watch --jsx React.createElement --compress false --sourcemap false"
+  },
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "microbundle": "^0.9.0"
+  }
+}

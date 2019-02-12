@@ -1,0 +1,60 @@
+{
+  "grid": {
+    "cols": 12,
+    "rows": 6
+  },
+  "modules": [
+    {
+      "name": "weathercore",
+      "config": {
+        "apiKey": "32b9327c0252928283395007c6996ed5",
+        "autoLocation": true
+      }
+    },
+    {
+      "name": "clock",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 2
+      }
+    },
+    {
+      "name": "currentweather",
+      "layout": {
+        "x": 0,
+        "y": 2,
+        "w": 4,
+        "h": 2
+      }
+    },
+    {
+      "name": "empty",
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 12,
+        "h": 1
+      }
+    },
+    {
+      "name": "rss",
+      "config": {
+        "feeds": [
+          "http://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+          "http://rss.cnn.com/rss/cnn_topstories.rss",
+          "http://www.npr.org/rss/rss.php?id=1001",
+          "http://feeds.reuters.com/reuters/topNews",
+          "http://newsrss.bbc.co.uk/rss/newsonline_world_edition/americas/rss.xml"
+        ]
+      },
+      "layout": {
+        "x": 0,
+        "y": 5,
+        "w": 12,
+        "h": 1
+      }
+    }
+  ]
+}

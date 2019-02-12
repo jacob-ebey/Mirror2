@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "client",
+  "version": "0.0.1",
+  "description": "The main client application of mirror2.",
+  "author": "Jacob Ebey <jacob.ebey@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./scripts/buildModules.js && parcel build src/index.html",
+    "dev": "node ./scripts/buildModules.js && parcel watch src/index.html"
+  },
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-grid-layout": "^0.16.6"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.17.0"
+  }
+}
