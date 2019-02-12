@@ -30,12 +30,21 @@
       }
     },
     {
-      "name": "empty",
+      "name": "dadjokes",
       "layout": {
         "x": 0,
         "y": 4,
-        "w": 12,
+        "w": 4,
         "h": 1
+      }
+    },
+    {
+      "name": "weatherforcast",
+      "layout": {
+        "x": 4,
+        "y": 2,
+        "w": 8,
+        "h": 3
       }
     },
     {

@@ -8,7 +8,7 @@
   "server": "dist/server/weathercore.js",
   "scripts": {
     "build": "microbundle build --entry src/server.js --output dist/server --compress false --sourcemap false",
-    "dev": "microbundle watch --entry src/server.js --output dist/server --compress false --sourcemap false"
+    "dev-": "microbundle watch --entry src/server.js --output dist/server --compress false --sourcemap false"
   },
   "dependencies": {
     "@polka/send-type": "^0.5.2",

@@ -64,6 +64,10 @@ export default class RSS extends React.Component {
 }
 
 const style = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  height: "100%",
   textAlign: "center"
 };
 

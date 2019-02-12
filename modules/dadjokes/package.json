@@ -1,20 +1,20 @@
 {
   "private": true,
-  "name": "rss",
+  "name": "dadjokes",
   "version": "0.0.1",
-  "description": "A basic rss feed module.",
+  "description": "A basic dad jokes module.",
   "author": "Jacob Ebey <jacob.ebey@live.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
   "module": "dist/index.mjs",
-  "server": "dist/server/rss.js",
+  "server": "dist/server/dadjokes.js",
   "source": "src/client.js",
   "scripts": {
     "build": "concurrently \"npm:build-*\"",
     "build-client": "microbundle build --jsx React.createElement --compress false --sourcemap false",
     "build-server": "microbundle build --entry src/server.js --output dist/server --compress false --sourcemap false",
-    "dev-": "concurrently \"npm:dev-*\"",
+    "dev": "concurrently \"npm:dev-*\"",
     "dev-client": "microbundle watch --jsx React.createElement --compress false --sourcemap false",
     "dev-server": "microbundle watch --entry src/server.js --output dist/server --compress false --sourcemap false"
   },
@@ -23,8 +23,7 @@
     "axios": "^0.18.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-fittext": "^1.0.0",
-    "rss-parser": "^3.6.2"
+    "react-fittext": "^1.0.0"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",

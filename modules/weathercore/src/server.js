@@ -9,10 +9,13 @@ export default function weatherCore({ apiKey, autoLocation, location }) {
       async route(req, res) {
         try {
           const locationResult = autoLocation ? await axios.get("http://ip-api.com/json") : { data: location };
-          const { lat, lon } = locationResult.data;
+          const { lat, lon, timezone } = locationResult.data;
           
           const result = await axios.get(`https://api.darksky.net/forecast/${apiKey}/${lat},${lon}`);
-          send(res, 200, result.data);
+          send(res, 200, {
+            ...result.data,
+            timezone
+          });
         } catch (ex) {
           send(res, 500, ex.toString());
         }

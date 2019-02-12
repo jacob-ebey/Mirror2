@@ -14,7 +14,7 @@
     "build": "concurrently \"npm:build-*\"",
     "build-client": "microbundle build --jsx React.createElement --compress false --sourcemap false",
     "build-server": "microbundle build --entry src/server.js --output dist/server --compress false --sourcemap false",
-    "dev": "concurrently \"npm:dev-*\"",
+    "dev-": "concurrently \"npm:dev-*\"",
     "dev-client": "microbundle watch --jsx React.createElement --compress false --sourcemap false",
     "dev-server": "microbundle watch --entry src/server.js --output dist/server --compress false --sourcemap false"
   },
