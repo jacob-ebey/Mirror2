@@ -1,7 +1,7 @@
-import Jokes from "./Jokes";
+import Xkcd from "./Xkcd";
 
 export default {
-  component: Jokes,
+  component: Xkcd,
   defaults: {
     refreshSpeed: 60000
   }

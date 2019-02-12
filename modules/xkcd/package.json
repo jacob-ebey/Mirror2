@@ -1,14 +1,14 @@
 {
   "private": true,
-  "name": "dadjokes",
+  "name": "xkcd",
   "version": "0.0.1",
-  "description": "A basic dad jokes module.",
+  "description": "A basic xkcd commic module.",
   "author": "Jacob Ebey <jacob.ebey@live.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
   "module": "dist/index.mjs",
-  "server": "dist/server/dadjokes.js",
+  "server": "dist/server/xkcd.js",
   "source": "src/client.js",
   "scripts": {
     "build": "concurrently \"npm:build-*\"",

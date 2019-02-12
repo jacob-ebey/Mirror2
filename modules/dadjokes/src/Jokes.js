@@ -15,12 +15,16 @@ export default class Jokes extends React.Component {
   nextJoke() {
     const { refreshSpeed } = this.props;
 
-    setTimeout(() => {
+    this.timeout = setTimeout(() => {
       this.refreshJoke();
     }, refreshSpeed);
   }
 
   async refreshJoke() {
+    if (this.timeout) {
+      clearTimeout(this.timeout);
+    }
+
     const res = await axios.get("/dadjokes/random");
     this.setState({ current: 0, joke: res.data });
     this.nextJoke();
@@ -34,7 +38,7 @@ export default class Jokes extends React.Component {
     const { joke } = this.state;
 
     return (
-      <div style={style}>
+      <div style={style} onClick={this.refreshJoke}>
         {
           !joke ? (
             <FitText compressor={2.5}>

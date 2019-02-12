@@ -48,10 +48,10 @@ export default class Weather extends React.Component {
                   <div style={summaryStyle}>{forecast.summary}</div>
                 </FitText>
                 <div style={forecastStyle}>
-                  {forecast.data.slice(0, days).map((item, i) => {
-                    const dotw = moment().add(i, "days").format("ddd");
+                  {forecast.data.slice(0, days).map((item, key) => {
+                    const dotw = moment().add(key, "days").format("ddd");
                     return (
-                      <div style={forecastRowStyle}>
+                      <div style={forecastRowStyle} key={key}>
                         <div style={forecastColStyle}>
                           <FitText>
                             <div>{dotw}</div>
